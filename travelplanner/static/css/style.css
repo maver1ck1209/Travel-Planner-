@@ -1,0 +1,84 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.appname{
+  color: white;
+  letter-spacing: 5px;
+  font-size: 20px;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.brlarge {
+  display: block;
+  margin-bottom: 7em;
+}
+
+.box, th, td{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 2px solid black;
+}
+
+nav{
+  display: flex;
+  text-align: right;
+  min-height: 8vh;
+  background-color: teal;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 42%;
+  margin-top: 2%;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px;
+}
+
+.nav-links a:hover:not(.active) {
+  background-color: lightseagreen;
+}
+
+.nav-links li a.active {
+  background-color: #4caf50;
+}
+
+.op{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 3%;
+}
+
+.op2{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 12%;
+}

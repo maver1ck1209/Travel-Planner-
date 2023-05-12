@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}Plan You Trip{% endblock%}
+{% block content %}
+<span class="brlarge"></span>
+<!-- Page content -->
+<div class="box">
+
+<form action = '/pyt' method = POST>
+    {% csrf_token %}
+<table style="width:100%">
+  <tr>
+    <th>Source</th>
+    <th>Destination</th>
+    <th>Optimize Using</th>
+  </tr>
+  <tr>
+    <td>
+      <select id="Source" name="Source" >
+    <option value="None">None</option>
+    <option value="Chennai, India">Chennai, India</option>
+    <option value="Montreal, Canada">Montreal, Canada</option>
+    <option value="Dubai, UAE">Dubai, UAE</option>
+    <option value="Maturin, Venezuela">Maturin, Venezuela</option>
+    <option value="Los Angeles, USA">Los Angeles, USA</option>
+    <option value="New York, USA">New York, USA</option>
+    <option value="Waterloo, Canada">Waterloo, Canada</option>
+    <option value="Longford, UK">Longford, UK</option>
+    <option value="Paris, France">Paris, France</option>
+    <option value="Frankfurt, Germany">Frankfurt, Germany</option>
+    <option value="Dublin, Ireland">Dublin, Ireland</option>
+    <option value="London, UK">London, UK</option>
+    <option value="Tokyo, Japan">Tokyo, Japan</option>
+    <option value="Shanghai, China">Shanghai, China</option>
+    <option value="Singapore">Singapore</option>
+    <option value="Sydney, Australia">Sydney, Australia</option>
+    <option value="Cairo, Egypt">Cairo, Egypt</option>
+    <option value="Toronto, Canada">Toronto, Canada</option>
+    <option value="Texas, USA">Texas, USA</option>
+    <option value="Stanford, USA">Stanford, USA</option>
+      </select>
+    </td>
+    <td>
+      <select id="Destination" name="Destination">
+    <option value="None">None</option>
+    <option value="Chennai, India">Chennai, India</option>
+    <option value="Montreal, Canada">Montreal, Canada</option>
+    <option value="Dubai, UAE">Dubai, UAE</option>
+    <option value="Maturin, Venezuela">Maturin, Venezuela</option>
+    <option value="Los Angeles, USA">Los Angeles, USA</option>
+    <option value="New York, USA">New York, USA</option>
+    <option value="Waterloo, Canada">Waterloo, Canada</option>
+    <option value="Longford, UK">Longford, UK</option>
+    <option value="Paris, France">Paris, France</option>
+    <option value="Frankfurt, Germany">Frankfurt, Germany</option>
+    <option value="Dublin, Ireland">Dublin, Ireland</option>
+    <option value="London, UK">London, UK</option>
+    <option value="Tokyo, Japan">Tokyo, Japan</option>
+    <option value="Shanghai, China">Shanghai, China</option>
+    <option value="Singapore">Singapore</option>
+    <option value="Sydney, Australia">Sydney, Australia</option>
+    <option value="Cairo, Egypt">Cairo, Egypt</option>
+    <option value="Toronto, Canada">Toronto, Canada</option>
+    <option value="Texas, USA">Texas, USA</option>
+    <option value="Stanford, USA">Stanford, USA</option>
+      </select>
+    </td>
+    <td>
+      <select id="Optimize Using" name = "Optimize Using">
+    <option value="None">None</option>
+    <option value="Distance">Distance</option>
+    <option value="Cost">Cost</option>
+      </select>
+    </td>
+  </tr>
+</table>
+<button type = "submit" class = "btn btn-success">Submit</button>
+</form>
+{% endblock %}
